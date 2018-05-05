@@ -25,6 +25,6 @@ public class HelloWorldController {
     @GetMapping("world")
     public String world(){
 //        return String.format("%s say %s", name, "hello world!");
-        return String.format("%s say %s", applicationValueUtil.getName(), "hello world!");
+        return String.format("%s say %s", applicationValueUtil.getName(), "hello world!!");
     }
 }
