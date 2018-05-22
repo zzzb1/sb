@@ -17,6 +17,7 @@ public class ThreadTest {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 //        threadTest();
         executorService();
+
     }
 
     private static void executorService() throws ExecutionException, InterruptedException {
@@ -32,6 +33,7 @@ public class ThreadTest {
             list.add(f);
         }
         // 关闭线程池
+
         executorService.shutdown();
 
         // 获取所有并发任务的运行结果
@@ -45,6 +47,7 @@ public class ThreadTest {
         Thread t1 = new Thread(new Thr());
 
         Thread t2 = new Thread(new Thr());
+
         t1.start();
         t2.start();
         for (int i = 0 ; i < 10; i++) {
